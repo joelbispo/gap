@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/16x16">
+        <file>icons/16x16/cil-menu.png</file>
+    </qresource>
+    <qresource prefix="/24X24">
+        <file>icons/24x24/cil-menu.png</file>
+    </qresource>
+    <qresource prefix="/20x20">
+        <file>icons/20x20/cil-menu.png</file>
+    </qresource>
+    <qresource prefix="/others">
+        <file>icons/others/pesquisadora.png</file>
+        <file>images/background.jpg</file>
+    </qresource>
+</RCC>

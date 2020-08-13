@@ -1,0 +1,9 @@
+{
+    "files": [
+    "../run.py",
+    "resources.qrc",
+    "MainView/mainview.py",
+    "MainView/mainview.ui",
+    "ResearcherView/LoginResearcherView.ui"
+    ]
+}
