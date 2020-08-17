@@ -315,4 +315,9 @@ compile_commands.json
 # Flags for Clang Code Model
 *.cxxflags
 *.cflags
+
+#firebase
+infrastructure/key_firebase.json
+
+
 # End of https://www.toptal.com/developers/gitignore/api/python,pycharm,qt,qtcreator
