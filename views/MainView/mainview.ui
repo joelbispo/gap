@@ -40,7 +40,7 @@ QToolTip {
          <string notr="true">background-color:  rgb(255, 255, 255);</string>
         </property>
         <property name="currentIndex">
-         <number>0</number>
+         <number>1</number>
         </property>
         <widget class="QWidget" name="main">
          <layout class="QGridLayout" name="gridLayout_8"/>
@@ -244,6 +244,10 @@ QPushButton:pressed {
             <pointsize>20</pointsize>
            </font>
           </property>
+          <property name="styleSheet">
+           <string notr="true">
+</string>
+          </property>
           <property name="frameShape">
            <enum>QFrame::StyledPanel</enum>
           </property>
@@ -277,85 +281,26 @@ QPushButton:pressed {
              </property>
             </spacer>
            </item>
-           <item row="0" column="0" colspan="3">
-            <widget class="QFrame" name="frame_5">
-             <property name="minimumSize">
-              <size>
-               <width>971</width>
-               <height>80</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>971</width>
-               <height>80</height>
-              </size>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">background-color: rgb(94, 146, 243);</string>
-             </property>
-             <property name="frameShape">
-              <enum>QFrame::StyledPanel</enum>
-             </property>
-             <property name="frameShadow">
-              <enum>QFrame::Raised</enum>
-             </property>
-             <widget class="QLabel" name="label_6">
-              <property name="geometry">
-               <rect>
-                <x>310</x>
-                <y>20</y>
-                <width>481</width>
-                <height>41</height>
-               </rect>
-              </property>
-              <property name="font">
-               <font>
-                <family>Roboto Black</family>
-                <pointsize>28</pointsize>
-                <weight>75</weight>
-                <bold>true</bold>
-               </font>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">color: rgb(255, 255, 255);</string>
-              </property>
-              <property name="text">
-               <string>Área de Pesquisa</string>
-              </property>
-             </widget>
-            </widget>
-           </item>
-           <item row="1" column="1">
-            <spacer name="verticalSpacer_4">
-             <property name="orientation">
-              <enum>Qt::Vertical</enum>
-             </property>
-             <property name="sizeHint" stdset="0">
-              <size>
-               <width>20</width>
-               <height>40</height>
-              </size>
-             </property>
-            </spacer>
-           </item>
-           <item row="2" column="0">
-            <spacer name="horizontalSpacer_2">
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
-             </property>
-             <property name="sizeHint" stdset="0">
-              <size>
-               <width>229</width>
-               <height>20</height>
-              </size>
-             </property>
-            </spacer>
-           </item>
            <item row="2" column="1" rowspan="2">
             <layout class="QVBoxLayout" name="verticalLayout_2">
              <item>
               <layout class="QVBoxLayout" name="verticalLayout">
+               <item>
+                <widget class="QLabel" name="lError">
+                 <property name="font">
+                  <font>
+                   <family>Roboto</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(255, 0, 0);</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
                <item>
                 <widget class="QLineEdit" name="leEmail">
                  <property name="minimumSize">
@@ -383,7 +328,7 @@ border-bottom: 1px solid blue;
 color: rgb(116, 116, 116);</string>
                  </property>
                  <property name="text">
-                  <string/>
+                  <string>joelbisponeto@gmail.com</string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignCenter</set>
@@ -420,7 +365,7 @@ border-bottom: 1px solid blue;
 color: rgb(116, 116, 116);</string>
                  </property>
                  <property name="text">
-                  <string/>
+                  <string>123456</string>
                  </property>
                  <property name="echoMode">
                   <enum>QLineEdit::Password</enum>
@@ -564,6 +509,81 @@ QPushButton:pressed {
              </item>
             </layout>
            </item>
+           <item row="0" column="0" colspan="3">
+            <widget class="QFrame" name="frame_5">
+             <property name="minimumSize">
+              <size>
+               <width>971</width>
+               <height>80</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>971</width>
+               <height>80</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(94, 146, 243);</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <widget class="QLabel" name="label_6">
+              <property name="geometry">
+               <rect>
+                <x>310</x>
+                <y>20</y>
+                <width>481</width>
+                <height>41</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Roboto Black</family>
+                <pointsize>28</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="text">
+               <string>Área de Pesquisa</string>
+              </property>
+             </widget>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>229</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="1" column="1">
+            <spacer name="verticalSpacer_4">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
           </layout>
          </widget>
         </widget>
@@ -634,7 +654,7 @@ QPushButton:pressed {
            </property>
            <layout class="QGridLayout" name="gridLayout_5">
             <item row="0" column="0">
-             <widget class="QLabel" name="label">
+             <widget class="QLabel" name="lUser">
               <property name="font">
                <font>
                 <family>Roboto</family>
@@ -647,7 +667,7 @@ QPushButton:pressed {
                <string notr="true">color: rgb(255, 255, 255);</string>
               </property>
               <property name="text">
-               <string>Olá, Maressa</string>
+               <string/>
               </property>
              </widget>
             </item>

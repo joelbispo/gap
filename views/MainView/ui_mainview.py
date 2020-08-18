@@ -136,6 +136,7 @@ class Ui_MainWindow(object):
         self.frame_4.setObjectName(u"frame_4")
         self.frame_4.setGeometry(QRect(130, 60, 991, 512))
         self.frame_4.setFont(font)
+        self.frame_4.setStyleSheet(u"")
         self.frame_4.setFrameShape(QFrame.StyledPanel)
         self.frame_4.setFrameShadow(QFrame.Raised)
         self.gridLayout_9 = QGridLayout(self.frame_4)
@@ -148,38 +149,20 @@ class Ui_MainWindow(object):
 
         self.gridLayout_9.addItem(self.verticalSpacer_3, 4, 1, 1, 1)
 
-        self.frame_5 = QFrame(self.frame_4)
-        self.frame_5.setObjectName(u"frame_5")
-        self.frame_5.setMinimumSize(QSize(971, 80))
-        self.frame_5.setMaximumSize(QSize(971, 80))
-        self.frame_5.setStyleSheet(u"background-color: rgb(94, 146, 243);")
-        self.frame_5.setFrameShape(QFrame.StyledPanel)
-        self.frame_5.setFrameShadow(QFrame.Raised)
-        self.label_6 = QLabel(self.frame_5)
-        self.label_6.setObjectName(u"label_6")
-        self.label_6.setGeometry(QRect(310, 20, 481, 41))
-        font1 = QFont()
-        font1.setFamily(u"Roboto Black")
-        font1.setPointSize(28)
-        font1.setBold(True)
-        font1.setWeight(75)
-        self.label_6.setFont(font1)
-        self.label_6.setStyleSheet(u"color: rgb(255, 255, 255);")
-
-        self.gridLayout_9.addWidget(self.frame_5, 0, 0, 1, 3)
-
-        self.verticalSpacer_4 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
-
-        self.gridLayout_9.addItem(self.verticalSpacer_4, 1, 1, 1, 1)
-
-        self.horizontalSpacer_2 = QSpacerItem(229, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
-
-        self.gridLayout_9.addItem(self.horizontalSpacer_2, 2, 0, 1, 1)
-
         self.verticalLayout_2 = QVBoxLayout()
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
         self.verticalLayout = QVBoxLayout()
         self.verticalLayout.setObjectName(u"verticalLayout")
+        self.lError = QLabel(self.frame_4)
+        self.lError.setObjectName(u"lError")
+        font1 = QFont()
+        font1.setFamily(u"Roboto")
+        font1.setPointSize(12)
+        self.lError.setFont(font1)
+        self.lError.setStyleSheet(u"color: rgb(255, 0, 0);")
+
+        self.verticalLayout.addWidget(self.lError)
+
         self.leEmail = QLineEdit(self.frame_4)
         self.leEmail.setObjectName(u"leEmail")
         self.leEmail.setMinimumSize(QSize(491, 81))
@@ -288,6 +271,34 @@ class Ui_MainWindow(object):
 
         self.gridLayout_9.addLayout(self.verticalLayout_2, 2, 1, 2, 1)
 
+        self.frame_5 = QFrame(self.frame_4)
+        self.frame_5.setObjectName(u"frame_5")
+        self.frame_5.setMinimumSize(QSize(971, 80))
+        self.frame_5.setMaximumSize(QSize(971, 80))
+        self.frame_5.setStyleSheet(u"background-color: rgb(94, 146, 243);")
+        self.frame_5.setFrameShape(QFrame.StyledPanel)
+        self.frame_5.setFrameShadow(QFrame.Raised)
+        self.label_6 = QLabel(self.frame_5)
+        self.label_6.setObjectName(u"label_6")
+        self.label_6.setGeometry(QRect(310, 20, 481, 41))
+        font4 = QFont()
+        font4.setFamily(u"Roboto Black")
+        font4.setPointSize(28)
+        font4.setBold(True)
+        font4.setWeight(75)
+        self.label_6.setFont(font4)
+        self.label_6.setStyleSheet(u"color: rgb(255, 255, 255);")
+
+        self.gridLayout_9.addWidget(self.frame_5, 0, 0, 1, 3)
+
+        self.horizontalSpacer_2 = QSpacerItem(229, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.gridLayout_9.addItem(self.horizontalSpacer_2, 2, 0, 1, 1)
+
+        self.verticalSpacer_4 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.gridLayout_9.addItem(self.verticalSpacer_4, 1, 1, 1, 1)
+
         self.gridLayout_10 = QGridLayout(self.researcher)
         self.gridLayout_10.setObjectName(u"gridLayout_10")
         self.swMain.addWidget(self.researcher)
@@ -318,29 +329,29 @@ class Ui_MainWindow(object):
         self.frame_3 = QFrame(self.topFrame)
         self.frame_3.setObjectName(u"frame_3")
         self.frame_3.setMinimumSize(QSize(70, 35))
-        font4 = QFont()
-        font4.setFamily(u"Segoe UI Black")
-        font4.setPointSize(10)
-        font4.setBold(True)
-        font4.setWeight(75)
-        self.frame_3.setFont(font4)
+        font5 = QFont()
+        font5.setFamily(u"Segoe UI Black")
+        font5.setPointSize(10)
+        font5.setBold(True)
+        font5.setWeight(75)
+        self.frame_3.setFont(font5)
         self.frame_3.setLayoutDirection(Qt.RightToLeft)
         self.frame_3.setStyleSheet(u"")
         self.frame_3.setFrameShape(QFrame.StyledPanel)
         self.frame_3.setFrameShadow(QFrame.Raised)
         self.gridLayout_5 = QGridLayout(self.frame_3)
         self.gridLayout_5.setObjectName(u"gridLayout_5")
-        self.label = QLabel(self.frame_3)
-        self.label.setObjectName(u"label")
-        font5 = QFont()
-        font5.setFamily(u"Roboto")
-        font5.setPointSize(16)
-        font5.setBold(True)
-        font5.setWeight(75)
-        self.label.setFont(font5)
-        self.label.setStyleSheet(u"color: rgb(255, 255, 255);")
+        self.lUser = QLabel(self.frame_3)
+        self.lUser.setObjectName(u"lUser")
+        font6 = QFont()
+        font6.setFamily(u"Roboto")
+        font6.setPointSize(16)
+        font6.setBold(True)
+        font6.setWeight(75)
+        self.lUser.setFont(font6)
+        self.lUser.setStyleSheet(u"color: rgb(255, 255, 255);")
 
-        self.gridLayout_5.addWidget(self.label, 0, 0, 1, 1)
+        self.gridLayout_5.addWidget(self.lUser, 0, 0, 1, 1)
 
 
         self.gridLayout.addWidget(self.frame_3, 0, 1, 1, 1)
@@ -358,7 +369,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.swMain.setCurrentIndex(0)
+        self.swMain.setCurrentIndex(1)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -368,14 +379,15 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"Principal", None))
         self.btnResearcher.setText(QCoreApplication.translate("MainWindow", u"Estou Pesquisando", None))
         self.btnParticipant.setText(QCoreApplication.translate("MainWindow", u"Sou Participante", None))
-        self.label_6.setText(QCoreApplication.translate("MainWindow", u"\u00c1rea de Pesquisa", None))
-        self.leEmail.setText("")
+        self.lError.setText("")
+        self.leEmail.setText(QCoreApplication.translate("MainWindow", u"joelbisponeto@gmail.com", None))
         self.leEmail.setPlaceholderText(QCoreApplication.translate("MainWindow", u"E-mail", None))
-        self.lePassword.setText("")
+        self.lePassword.setText(QCoreApplication.translate("MainWindow", u"123456", None))
         self.lePassword.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Senha", None))
         self.btnLogin.setText(QCoreApplication.translate("MainWindow", u"ENTRAR", None))
         self.btnForgetPassword.setText(QCoreApplication.translate("MainWindow", u"Esqueci minha senha", None))
         self.btnRegister.setText(QCoreApplication.translate("MainWindow", u"Quero me cadastrar", None))
-        self.label.setText(QCoreApplication.translate("MainWindow", u"Ol\u00e1, Maressa", None))
+        self.label_6.setText(QCoreApplication.translate("MainWindow", u"\u00c1rea de Pesquisa", None))
+        self.lUser.setText("")
     # retranslateUi
 
