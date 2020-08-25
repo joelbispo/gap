@@ -1,15 +1,13 @@
 import requests
 
-
-from model.user import User
+from infrastructure.firebase_sdka_admin import api_key
+from model.user import user_logged
 from utils.api_tools import error_formatter
 
 
-
 class LoginController:
-    WEB_API_KEY = "AIzaSyDoJWnoD_jj4RcrB_Ft7PprrUJoHfIbP80"
+    WEB_API_KEY = api_key
     URL = f"https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword"
-    _user = None
 
     def login(self, email: str, password: str,  secure_token: bool = True):
         data = {
@@ -23,13 +21,7 @@ class LoginController:
                                  data=data)
 
         if response.ok:
-            self._user = User().from_dict(response.json())
-            return self._user, "Sucesso"
+            user_logged.from_dict(response.json())
+            return True, "Sucesso"
         else:
-            return self._user, error_formatter(response.json()['error']['message'])
-
-    def logout(self):
-        self._user = None
-
-    def get_user_logged(self):
-        return self._user
+            return False, error_formatter(response.json()['error']['message'])

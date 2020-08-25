@@ -1,6 +1,3 @@
-user_logged = None
-
-
 class User:
     # need to ignore common case because it is a Firebase standard.
     COLLECTION = "user"
@@ -13,9 +10,8 @@ class User:
         self.idToken = idToken
         self.registered = registered
 
-    @classmethod
-    def from_dict(cls, dictionary: dict):
-        obj = cls()
+    def from_dict(self, dictionary: dict):
+        obj = self
         for key in dictionary:
             setattr(obj, key, dictionary[key])
 
@@ -23,3 +19,6 @@ class User:
 
     def to_dict(self) -> dict:
         return self.__dict__
+
+
+user_logged: User = User()

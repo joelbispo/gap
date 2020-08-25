@@ -318,6 +318,7 @@ compile_commands.json
 
 #firebase
 infrastructure/key_firebase.json
+infrastructure/web_api_key.json
 
 
 # End of https://www.toptal.com/developers/gitignore/api/python,pycharm,qt,qtcreator

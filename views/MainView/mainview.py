@@ -1,6 +1,7 @@
 from PySide2.QtWidgets import QMainWindow
 
 from controller.login_controller import LoginController
+from model.user import user_logged
 from views.AdminAreaView.AdminAreaView import AdminAreaView
 from views.MainView.ui_mainview import Ui_MainWindow
 from model import user
@@ -28,16 +29,15 @@ class MainWindow(QMainWindow):
     def _click_login(self):
         self.ui.lError.setText("")
         login_controller = LoginController()
-        user_received, message = login_controller.login(self.ui.leEmail.text(), self.ui.lePassword.text())
+        success, message = login_controller.login(self.ui.leEmail.text(), self.ui.lePassword.text())
 
-        if not user_received:
+        if not success:
             self.ui.lError.setText(message)
         else:
-            user.user_logged = user_received
             admin_area = AdminAreaView()
             self.ui.swMain.insertWidget(ADMIN_AREA_INDEX, admin_area)
             self.ui.swMain.setCurrentIndex(ADMIN_AREA_INDEX)
-            self.ui.lUser.setText(user_received.email)
+            self.ui.lUser.setText(user_logged.email)
 
     def _le_email_connect(self):
         self.ui.leEmail.setText("")

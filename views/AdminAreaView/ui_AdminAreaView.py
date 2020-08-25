@@ -136,32 +136,16 @@ class Ui_AdminAreaView(object):
 
         self.gridLayout_2.addLayout(self.horizontalLayout_4, 1, 0, 1, 1)
 
-        self.tableWidget = QTableWidget(self.frame)
-        if (self.tableWidget.columnCount() < 2):
-            self.tableWidget.setColumnCount(2)
+        self.tbExperiment = QTableWidget(self.frame)
+        if (self.tbExperiment.columnCount() < 2):
+            self.tbExperiment.setColumnCount(2)
         __qtablewidgetitem = QTableWidgetItem()
-        __qtablewidgetitem.setFont(font1);
-        self.tableWidget.setHorizontalHeaderItem(0, __qtablewidgetitem)
+        self.tbExperiment.setHorizontalHeaderItem(0, __qtablewidgetitem)
         __qtablewidgetitem1 = QTableWidgetItem()
-        __qtablewidgetitem1.setFont(font1);
-        self.tableWidget.setHorizontalHeaderItem(1, __qtablewidgetitem1)
-        if (self.tableWidget.rowCount() < 2):
-            self.tableWidget.setRowCount(2)
-        __qtablewidgetitem2 = QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(0, __qtablewidgetitem2)
-        __qtablewidgetitem3 = QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(1, __qtablewidgetitem3)
-        __qtablewidgetitem4 = QTableWidgetItem()
-        self.tableWidget.setItem(0, 0, __qtablewidgetitem4)
-        __qtablewidgetitem5 = QTableWidgetItem()
-        self.tableWidget.setItem(0, 1, __qtablewidgetitem5)
-        __qtablewidgetitem6 = QTableWidgetItem()
-        self.tableWidget.setItem(1, 0, __qtablewidgetitem6)
-        __qtablewidgetitem7 = QTableWidgetItem()
-        self.tableWidget.setItem(1, 1, __qtablewidgetitem7)
-        self.tableWidget.setObjectName(u"tableWidget")
+        self.tbExperiment.setHorizontalHeaderItem(1, __qtablewidgetitem1)
+        self.tbExperiment.setObjectName(u"tbExperiment")
 
-        self.gridLayout_2.addWidget(self.tableWidget, 2, 0, 1, 1)
+        self.gridLayout_2.addWidget(self.tbExperiment, 2, 0, 1, 1)
 
 
         self.gridLayout_3.addWidget(self.frame, 0, 0, 1, 1)
@@ -184,26 +168,9 @@ class Ui_AdminAreaView(object):
         self.label_6.setText(QCoreApplication.translate("AdminAreaView", u"Pesquisas", None))
         self.btnNewExpriment.setText(QCoreApplication.translate("AdminAreaView", u"Criar novo experimento", None))
         self.btnNewExpriment_2.setText(QCoreApplication.translate("AdminAreaView", u"Iniciar uma nova sess\u00e3o", None))
-        ___qtablewidgetitem = self.tableWidget.horizontalHeaderItem(0)
-        ___qtablewidgetitem.setText(QCoreApplication.translate("AdminAreaView", u"Nome do Experimento", None));
-        ___qtablewidgetitem1 = self.tableWidget.horizontalHeaderItem(1)
-        ___qtablewidgetitem1.setText(QCoreApplication.translate("AdminAreaView", u"Quantidade de particpantes", None));
-        ___qtablewidgetitem2 = self.tableWidget.verticalHeaderItem(0)
-        ___qtablewidgetitem2.setText(QCoreApplication.translate("AdminAreaView", u"1", None));
-        ___qtablewidgetitem3 = self.tableWidget.verticalHeaderItem(1)
-        ___qtablewidgetitem3.setText(QCoreApplication.translate("AdminAreaView", u"2", None));
-
-        __sortingEnabled = self.tableWidget.isSortingEnabled()
-        self.tableWidget.setSortingEnabled(False)
-        ___qtablewidgetitem4 = self.tableWidget.item(0, 0)
-        ___qtablewidgetitem4.setText(QCoreApplication.translate("AdminAreaView", u"Primeiro Experimento", None));
-        ___qtablewidgetitem5 = self.tableWidget.item(0, 1)
-        ___qtablewidgetitem5.setText(QCoreApplication.translate("AdminAreaView", u"30", None));
-        ___qtablewidgetitem6 = self.tableWidget.item(1, 0)
-        ___qtablewidgetitem6.setText(QCoreApplication.translate("AdminAreaView", u"Segundo Experimento", None));
-        ___qtablewidgetitem7 = self.tableWidget.item(1, 1)
-        ___qtablewidgetitem7.setText(QCoreApplication.translate("AdminAreaView", u"20", None));
-        self.tableWidget.setSortingEnabled(__sortingEnabled)
-
+        ___qtablewidgetitem = self.tbExperiment.horizontalHeaderItem(0)
+        ___qtablewidgetitem.setText(QCoreApplication.translate("AdminAreaView", u"Name", None));
+        ___qtablewidgetitem1 = self.tbExperiment.horizontalHeaderItem(1)
+        ___qtablewidgetitem1.setText(QCoreApplication.translate("AdminAreaView", u"Numbers", None));
     # retranslateUi
 
